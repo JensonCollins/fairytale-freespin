@@ -1,0 +1,196 @@
+{
+  "frames": {
+    "land_seamless2": {
+      "frame": {
+        "x": 2,
+        "y": 718,
+        "w": 872,
+        "h": 290
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 872,
+        "h": 290
+      },
+      "sourceSize": {
+        "w": 872,
+        "h": 290
+      }
+    },
+    "land_seamless_FS2": {
+      "frame": {
+        "x": 2,
+        "y": 426,
+        "w": 872,
+        "h": 290
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 872,
+        "h": 290
+      },
+      "sourceSize": {
+        "w": 872,
+        "h": 290
+      }
+    },
+    "tree1_secondary": {
+      "frame": {
+        "x": 399,
+        "y": 2,
+        "w": 362,
+        "h": 204
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 362,
+        "h": 204
+      },
+      "sourceSize": {
+        "w": 362,
+        "h": 204
+      }
+    },
+    "tree1_secondary_fs": {
+      "frame": {
+        "x": 845,
+        "y": 9,
+        "w": 362,
+        "h": 204
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 362,
+        "h": 204
+      },
+      "sourceSize": {
+        "w": 362,
+        "h": 204
+      }
+    },
+    "tree2_secondary": {
+      "frame": {
+        "x": 876,
+        "y": 426,
+        "w": 365,
+        "h": 209
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 365,
+        "h": 209
+      },
+      "sourceSize": {
+        "w": 365,
+        "h": 209
+      }
+    },
+    "tree2_secondary_fs": {
+      "frame": {
+        "x": 845,
+        "y": 215,
+        "w": 365,
+        "h": 209
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 365,
+        "h": 209
+      },
+      "sourceSize": {
+        "w": 365,
+        "h": 209
+      }
+    },
+    "tree_clubs": {
+      "frame": {
+        "x": 876,
+        "y": 637,
+        "w": 395,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 395,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 395,
+        "h": 371
+      }
+    },
+    "tree_clubs_fs": {
+      "frame": {
+        "x": 2,
+        "y": 53,
+        "w": 395,
+        "h": 371
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 395,
+        "h": 371
+      },
+      "sourceSize": {
+        "w": 395,
+        "h": 371
+      }
+    },
+    "trees_back_fs": {
+      "frame": {
+        "x": 399,
+        "y": 208,
+        "w": 444,
+        "h": 216
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 444,
+        "h": 216
+      },
+      "sourceSize": {
+        "w": 444,
+        "h": 216
+      }
+    }
+  },
+  "meta": {
+    "app": "https://www.codeandweb.com/texturepacker",
+    "version": "1.0",
+    "image": "rrh_parallax2.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1273,
+      "h": 1010
+    },
+    "scale": "1",
+    "smartupdate": "$TexturePacker:SmartUpdate:f35407106723d6818c92805cac2423ba:467378dd1a153a1f5255dc6867c3e289:de62c4130a72712ae995d05d7f4a14e5$"
+  }
+}

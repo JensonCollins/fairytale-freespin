@@ -1,0 +1,135 @@
+{"frames": {
+
+"wildAttention_01.png":
+{
+	"frame": {"x":1,"y":1,"w":198,"h":186},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":198,"h":186},
+	"sourceSize": {"w":198,"h":186}
+},
+"wildAttention_02.png":
+{
+	"frame": {"x":201,"y":1,"w":198,"h":186},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":198,"h":186},
+	"sourceSize": {"w":198,"h":186}
+},
+"wildAttention_03.png":
+{
+	"frame": {"x":401,"y":1,"w":198,"h":186},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":198,"h":186},
+	"sourceSize": {"w":198,"h":186}
+},
+"wildAttention_04.png":
+{
+	"frame": {"x":601,"y":1,"w":198,"h":186},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":198,"h":186},
+	"sourceSize": {"w":198,"h":186}
+},
+"wildAttention_05.png":
+{
+	"frame": {"x":801,"y":1,"w":198,"h":186},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":198,"h":186},
+	"sourceSize": {"w":198,"h":186}
+},
+"wildAttention_06.png":
+{
+	"frame": {"x":1,"y":189,"w":198,"h":186},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":198,"h":186},
+	"sourceSize": {"w":198,"h":186}
+},
+"wildAttention_07.png":
+{
+	"frame": {"x":201,"y":189,"w":198,"h":186},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":198,"h":186},
+	"sourceSize": {"w":198,"h":186}
+},
+"wildAttention_08.png":
+{
+	"frame": {"x":401,"y":189,"w":198,"h":186},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":198,"h":186},
+	"sourceSize": {"w":198,"h":186}
+},
+"wildAttention_09.png":
+{
+	"frame": {"x":601,"y":189,"w":198,"h":186},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":198,"h":186},
+	"sourceSize": {"w":198,"h":186}
+},
+"wildAttention_10.png":
+{
+	"frame": {"x":801,"y":189,"w":198,"h":186},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":198,"h":186},
+	"sourceSize": {"w":198,"h":186}
+},
+"wildAttention_11.png":
+{
+	"frame": {"x":1,"y":377,"w":198,"h":186},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":198,"h":186},
+	"sourceSize": {"w":198,"h":186}
+},
+"wildAttention_12.png":
+{
+	"frame": {"x":201,"y":377,"w":198,"h":186},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":198,"h":186},
+	"sourceSize": {"w":198,"h":186}
+},
+"wildAttention_13.png":
+{
+	"frame": {"x":401,"y":377,"w":198,"h":186},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":198,"h":186},
+	"sourceSize": {"w":198,"h":186}
+},
+"wildAttention_14.png":
+{
+	"frame": {"x":601,"y":377,"w":198,"h":186},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":198,"h":186},
+	"sourceSize": {"w":198,"h":186}
+},
+"wildAttention_15.png":
+{
+	"frame": {"x":801,"y":377,"w":198,"h":186},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":198,"h":186},
+	"sourceSize": {"w":198,"h":186}
+}},
+"animations": {
+	"wildAttention": ["wildAttention_01.png","wildAttention_02.png","wildAttention_03.png","wildAttention_04.png","wildAttention_05.png","wildAttention_06.png","wildAttention_07.png","wildAttention_08.png","wildAttention_09.png","wildAttention_10.png","wildAttention_11.png","wildAttention_12.png","wildAttention_13.png","wildAttention_14.png","wildAttention_15.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "winAttention.png",
+	"format": "RGBA8888",
+	"size": {"w":1000,"h":564},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:adaf71cc0a2e17c5006aa42d819f318a:c65d8c4e454f08d256e94f7a6253ec36:a2b1f9f2022db2d424ff9acb2fbff18a$"
+}
+}

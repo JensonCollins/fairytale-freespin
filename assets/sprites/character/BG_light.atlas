@@ -1,0 +1,13 @@
+
+BG_light.png
+size: 324,204
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+backlight
+  rotate: false
+  xy: 2, 2
+  size: 320, 200
+  orig: 320, 200
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,100 @@
+{
+"skeleton": { "hash": "grVcUnBMlZDbVNnly1xqB1hvKPY", "spine": "3.2.01", "width": 9750, "height": 5250 },
+"bones": [
+	{ "name": "root" },
+	{ "name": "NElogo", "parent": "root", "x": 1.01, "y": -25.41, "scaleX": 2, "scaleY": 2 }
+],
+"slots": [
+	{ "name": "bg", "bone": "root", "attachment": "bg" },
+	{ "name": "logo", "bone": "NElogo", "attachment": "LogoNetEnt-Comp-1_00000" },
+	{ "name": "root", "bone": "root" }
+],
+"skins": {
+	"default": {
+		"bg": {
+			"bg": { "scaleX": 150, "scaleY": 150, "width": 65, "height": 35 }
+		},
+		"logo": {
+			"LogoNetEnt-Comp-1_00000": { "width": 395, "height": 202 },
+			"LogoNetEnt-Comp-1_00001": { "width": 395, "height": 202 },
+			"LogoNetEnt-Comp-1_00002": { "width": 395, "height": 202 },
+			"LogoNetEnt-Comp-1_00003": { "width": 395, "height": 202 },
+			"LogoNetEnt-Comp-1_00004": { "width": 395, "height": 202 },
+			"LogoNetEnt-Comp-1_00005": { "width": 395, "height": 202, "rotation": 180 },
+			"LogoNetEnt-Comp-1_00006": { "width": 395, "height": 202, "rotation": 180 },
+			"LogoNetEnt-Comp-1_00007": { "width": 395, "height": 202 },
+			"LogoNetEnt-Comp-1_00008": { "width": 395, "height": 202 },
+			"LogoNetEnt-Comp-1_00009": { "width": 395, "height": 202 },
+			"LogoNetEnt-Comp-1_00010": { "width": 395, "height": 202 },
+			"LogoNetEnt-Comp-1_00011": { "width": 395, "height": 202 },
+			"LogoNetEnt-Comp-1_00012": { "width": 395, "height": 202 },
+			"LogoNetEnt-Comp-1_00013": { "width": 395, "height": 202 },
+			"LogoNetEnt-Comp-1_00014": { "width": 395, "height": 202 },
+			"LogoNetEnt-Comp-1_00015": { "width": 395, "height": 202 },
+			"LogoNetEnt-Comp-1_00016": { "width": 395, "height": 202 },
+			"LogoNetEnt-Comp-1_00017": { "width": 395, "height": 202 },
+			"LogoNetEnt-Comp-1_00018": { "width": 395, "height": 202 },
+			"LogoNetEnt-Comp-1_00019": { "width": 395, "height": 202 },
+			"LogoNetEnt-Comp-1_00020": { "width": 395, "height": 202, "rotation": 180 },
+			"LogoNetEnt-Comp-1_00021": { "width": 395, "height": 202 },
+			"LogoNetEnt-Comp-1_00022": { "width": 395, "height": 202, "rotation": 180 },
+			"LogoNetEnt-Comp-1_00023": { "width": 395, "height": 202 },
+			"LogoNetEnt-Comp-1_00024": { "width": 395, "height": 202 },
+			"LogoNetEnt-Comp-1_00025": { "width": 395, "height": 202 }
+		}
+	}
+},
+"animations": {
+	"Logo": {
+		"slots": {
+			"bg": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.1666, "color": "ffffffff" },
+					{ "time": 1.8333, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0, "name": "bg" },
+					{ "time": 1.8666, "name": null }
+				]
+			},
+			"logo": {
+				"attachment": [
+					{ "time": 0.3333, "name": "LogoNetEnt-Comp-1_00000" },
+					{ "time": 0.3666, "name": "LogoNetEnt-Comp-1_00001" },
+					{ "time": 0.4333, "name": "LogoNetEnt-Comp-1_00002" },
+					{ "time": 0.4666, "name": "LogoNetEnt-Comp-1_00003" },
+					{ "time": 0.5, "name": "LogoNetEnt-Comp-1_00004" },
+					{ "time": 0.5666, "name": "LogoNetEnt-Comp-1_00005" },
+					{ "time": 0.6, "name": "LogoNetEnt-Comp-1_00006" },
+					{ "time": 0.6333, "name": "LogoNetEnt-Comp-1_00007" },
+					{ "time": 0.7, "name": "LogoNetEnt-Comp-1_00008" },
+					{ "time": 0.7333, "name": "LogoNetEnt-Comp-1_00009" },
+					{ "time": 0.7666, "name": "LogoNetEnt-Comp-1_00010" },
+					{ "time": 0.8333, "name": "LogoNetEnt-Comp-1_00011" },
+					{ "time": 0.8666, "name": "LogoNetEnt-Comp-1_00012" },
+					{ "time": 0.9333, "name": "LogoNetEnt-Comp-1_00013" },
+					{ "time": 0.9666, "name": "LogoNetEnt-Comp-1_00014" },
+					{ "time": 1, "name": "LogoNetEnt-Comp-1_00015" },
+					{ "time": 1.0666, "name": "LogoNetEnt-Comp-1_00016" },
+					{ "time": 1.1, "name": "LogoNetEnt-Comp-1_00017" },
+					{ "time": 1.1333, "name": "LogoNetEnt-Comp-1_00018" },
+					{ "time": 1.2, "name": "LogoNetEnt-Comp-1_00019" },
+					{ "time": 1.2333, "name": "LogoNetEnt-Comp-1_00020" },
+					{ "time": 1.2666, "name": "LogoNetEnt-Comp-1_00021" },
+					{ "time": 1.3333, "name": "LogoNetEnt-Comp-1_00022" },
+					{ "time": 1.3666, "name": "LogoNetEnt-Comp-1_00023" },
+					{ "time": 1.4, "name": "LogoNetEnt-Comp-1_00024" },
+					{ "time": 1.4666, "name": "LogoNetEnt-Comp-1_00025" },
+					{ "time": 1.5, "name": null }
+				]
+			},
+			"root": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,239 @@
+{"frames": {
+
+"intenseBlast_01.png":
+{
+	"frame": {"x":1079,"y":1645,"w":110,"h":117},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":136,"y":133,"w":110,"h":117},
+	"sourceSize": {"w":402,"h":430}
+},
+"intenseBlast_02.png":
+{
+	"frame": {"x":1455,"y":359,"w":220,"h":315},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":88,"y":34,"w":220,"h":315},
+	"sourceSize": {"w":402,"h":430}
+},
+"intenseBlast_03.png":
+{
+	"frame": {"x":1462,"y":1,"w":254,"h":356},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":75,"y":15,"w":254,"h":356},
+	"sourceSize": {"w":402,"h":430}
+},
+"intenseBlast_04.png":
+{
+	"frame": {"x":323,"y":963,"w":270,"h":369},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":68,"y":10,"w":270,"h":369},
+	"sourceSize": {"w":402,"h":430}
+},
+"intenseBlast_05.png":
+{
+	"frame": {"x":694,"y":1222,"w":276,"h":377},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":63,"y":9,"w":276,"h":377},
+	"sourceSize": {"w":402,"h":430}
+},
+"intenseBlast_06.png":
+{
+	"frame": {"x":686,"y":323,"w":279,"h":382},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":59,"y":7,"w":279,"h":382},
+	"sourceSize": {"w":402,"h":430}
+},
+"intenseBlast_07.png":
+{
+	"frame": {"x":1442,"y":676,"w":273,"h":373},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":60,"y":10,"w":273,"h":373},
+	"sourceSize": {"w":402,"h":430}
+},
+"intenseBlast_08.png":
+{
+	"frame": {"x":332,"y":682,"w":279,"h":352},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":57,"y":18,"w":279,"h":352},
+	"sourceSize": {"w":402,"h":430}
+},
+"intenseBlast_09.png":
+{
+	"frame": {"x":1,"y":1566,"w":281,"h":349},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":55,"y":15,"w":281,"h":349},
+	"sourceSize": {"w":402,"h":430}
+},
+"intenseBlast_10.png":
+{
+	"frame": {"x":332,"y":395,"w":285,"h":352},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":52,"y":12,"w":285,"h":352},
+	"sourceSize": {"w":402,"h":430}
+},
+"intenseBlast_11.png":
+{
+	"frame": {"x":1079,"y":1288,"w":293,"h":355},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":49,"y":9,"w":293,"h":355},
+	"sourceSize": {"w":402,"h":430}
+},
+"intenseBlast_12.png":
+{
+	"frame": {"x":352,"y":1550,"w":297,"h":362},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":44,"y":8,"w":297,"h":362},
+	"sourceSize": {"w":402,"h":430}
+},
+"intenseBlast_13.png":
+{
+	"frame": {"x":1374,"y":1051,"w":299,"h":357},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":41,"y":11,"w":299,"h":357},
+	"sourceSize": {"w":402,"h":430}
+},
+"intenseBlast_14.png":
+{
+	"frame": {"x":716,"y":1500,"w":302,"h":361},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":43,"y":12,"w":302,"h":361},
+	"sourceSize": {"w":402,"h":430}
+},
+"intenseBlast_15.png":
+{
+	"frame": {"x":1069,"y":617,"w":293,"h":371},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":45,"y":12,"w":293,"h":371},
+	"sourceSize": {"w":402,"h":430}
+},
+"intenseBlast_16.png":
+{
+	"frame": {"x":1374,"y":1410,"w":298,"h":368},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":42,"y":16,"w":298,"h":368},
+	"sourceSize": {"w":402,"h":430}
+},
+"intenseBlast_17.png":
+{
+	"frame": {"x":1076,"y":316,"w":299,"h":377},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":45,"y":17,"w":299,"h":377},
+	"sourceSize": {"w":402,"h":430}
+},
+"intenseBlast_18.png":
+{
+	"frame": {"x":1073,"y":912,"w":299,"h":374},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":47,"y":20,"w":299,"h":374},
+	"sourceSize": {"w":402,"h":430}
+},
+"intenseBlast_19.png":
+{
+	"frame": {"x":694,"y":916,"w":304,"h":377},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":45,"y":22,"w":304,"h":377},
+	"sourceSize": {"w":402,"h":430}
+},
+"intenseBlast_20.png":
+{
+	"frame": {"x":686,"y":604,"w":310,"h":381},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":42,"y":23,"w":310,"h":381},
+	"sourceSize": {"w":402,"h":430}
+},
+"intenseBlast_21.png":
+{
+	"frame": {"x":686,"y":1,"w":320,"h":388},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":35,"y":20,"w":320,"h":388},
+	"sourceSize": {"w":402,"h":430}
+},
+"intenseBlast_22.png":
+{
+	"frame": {"x":1,"y":395,"w":329,"h":386},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":22,"w":329,"h":386},
+	"sourceSize": {"w":402,"h":430}
+},
+"intenseBlast_23.png":
+{
+	"frame": {"x":1,"y":1,"w":339,"h":392},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":20,"y":18,"w":339,"h":392},
+	"sourceSize": {"w":402,"h":430}
+},
+"intenseBlast_24.png":
+{
+	"frame": {"x":342,"y":1,"w":342,"h":374},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":33,"w":342,"h":374},
+	"sourceSize": {"w":402,"h":430}
+},
+"intenseBlast_25.png":
+{
+	"frame": {"x":306,"y":1235,"w":313,"h":379},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":41,"y":31,"w":313,"h":379},
+	"sourceSize": {"w":402,"h":430}
+},
+"intenseBlast_26.png":
+{
+	"frame": {"x":1076,"y":1,"w":313,"h":384},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":38,"y":28,"w":313,"h":384},
+	"sourceSize": {"w":402,"h":430}
+},
+"intenseBlast_27.png":
+{
+	"frame": {"x":1,"y":783,"w":320,"h":388},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":34,"y":26,"w":320,"h":388},
+	"sourceSize": {"w":402,"h":430}
+},
+"intenseBlast_28.png":
+{
+	"frame": {"x":1,"y":1173,"w":303,"h":391},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":54,"y":23,"w":303,"h":391},
+	"sourceSize": {"w":402,"h":430}
+}},
+"animations": {
+	"intenseBlast": ["intenseBlast_01.png","intenseBlast_02.png","intenseBlast_03.png","intenseBlast_04.png","intenseBlast_05.png","intenseBlast_06.png","intenseBlast_07.png","intenseBlast_08.png","intenseBlast_09.png","intenseBlast_10.png","intenseBlast_11.png","intenseBlast_12.png","intenseBlast_13.png","intenseBlast_14.png","intenseBlast_15.png","intenseBlast_16.png","intenseBlast_17.png","intenseBlast_18.png","intenseBlast_19.png","intenseBlast_20.png","intenseBlast_21.png","intenseBlast_22.png","intenseBlast_23.png","intenseBlast_24.png","intenseBlast_25.png","intenseBlast_26.png","intenseBlast_27.png","intenseBlast_28.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "intenseBlast.png",
+	"format": "RGBA8888",
+	"size": {"w":1717,"h":1848},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:e95b7fbfbef1c1dd6ccc2eedf3532bf4:b5a35ee1c03664b6ba6da2b04a902855:2a476ba741dac4c9d9518f91b6178cac$"
+}
+}

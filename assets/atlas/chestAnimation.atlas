@@ -1,0 +1,111 @@
+
+chestAnimation.png
+size: 1762,982
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Chest
+  rotate: true
+  xy: 1364, 650
+  size: 330, 134
+  orig: 330, 134
+  offset: 0, 0
+  index: -1
+Lid_00
+  rotate: true
+  xy: 2, 2
+  size: 344, 218
+  orig: 344, 218
+  offset: 0, 0
+  index: -1
+Lid_01
+  rotate: true
+  xy: 222, 2
+  size: 344, 218
+  orig: 344, 218
+  offset: 0, 0
+  index: -1
+Lid_02
+  rotate: true
+  xy: 442, 2
+  size: 344, 218
+  orig: 344, 218
+  offset: 0, 0
+  index: -1
+Lid_03
+  rotate: true
+  xy: 662, 2
+  size: 344, 218
+  orig: 344, 218
+  offset: 0, 0
+  index: -1
+Lid_04
+  rotate: true
+  xy: 882, 2
+  size: 344, 218
+  orig: 344, 218
+  offset: 0, 0
+  index: -1
+Lid_05
+  rotate: true
+  xy: 1102, 2
+  size: 344, 218
+  orig: 344, 218
+  offset: 0, 0
+  index: -1
+Lid_06
+  rotate: true
+  xy: 1322, 2
+  size: 344, 218
+  orig: 344, 218
+  offset: 0, 0
+  index: -1
+Lid_07
+  rotate: true
+  xy: 1542, 636
+  size: 344, 218
+  orig: 344, 218
+  offset: 0, 0
+  index: -1
+Lid_08
+  rotate: false
+  xy: 1364, 416
+  size: 344, 218
+  orig: 344, 218
+  offset: 0, 0
+  index: -1
+Lid_09
+  rotate: true
+  xy: 1542, 70
+  size: 344, 218
+  orig: 344, 218
+  offset: 0, 0
+  index: -1
+Line
+  rotate: true
+  xy: 1500, 650
+  size: 330, 10
+  orig: 330, 10
+  offset: 0, 0
+  index: -1
+shine_01
+  rotate: true
+  xy: 2, 348
+  size: 632, 452
+  orig: 632, 452
+  offset: 0, 0
+  index: -1
+shine_02
+  rotate: true
+  xy: 456, 348
+  size: 632, 452
+  orig: 632, 452
+  offset: 0, 0
+  index: -1
+shine_03
+  rotate: true
+  xy: 910, 348
+  size: 632, 452
+  orig: 632, 452
+  offset: 0, 0
+  index: -1

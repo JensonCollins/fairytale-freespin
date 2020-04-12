@@ -1,0 +1,13 @@
+
+others.png
+size: 2016,1427
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+coin_win.png
+  rotate: false
+  xy: 1283, 1
+  size: 384, 466
+  orig: 384, 466
+  offset: 0, 0
+  index: -1

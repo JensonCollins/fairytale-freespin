@@ -1,0 +1,138 @@
+big_win_main.png
+size: 4096,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BIGbaseTRIANGLE
+  rotate: false
+  xy: 2230, 1215
+  size: 805, 777
+  orig: 805, 777
+  offset: 0, 0
+  index: -1
+M_drawing1
+  rotate: false
+  xy: 2487, 987
+  size: 190, 226
+  orig: 190, 226
+  offset: 0, 0
+  index: -1
+blurred_ray
+  rotate: false
+  xy: 3747, 1406
+  size: 191, 586
+  orig: 191, 586
+  offset: 0, 0
+  index: -1
+card1
+  rotate: false
+  xy: 2679, 978
+  size: 168, 235
+  orig: 168, 235
+  offset: 0, 0
+  index: -1
+coatHangerSign1
+  rotate: false
+  xy: 3940, 1863
+  size: 146, 129
+  orig: 146, 129
+  offset: 0, 0
+  index: -1
+dust
+  rotate: false
+  xy: 1738, 192
+  size: 246, 260
+  orig: 246, 260
+  offset: 0, 0
+  index: -1
+eye_circle_big
+  rotate: false
+  xy: 2230, 964
+  size: 255, 249
+  orig: 255, 249
+  offset: 0, 0
+  index: -1
+eye_circle_small
+  rotate: false
+  xy: 3747, 1230
+  size: 173, 174
+  orig: 173, 174
+  offset: 0, 0
+  index: -1
+halo
+  rotate: false
+  xy: 2, 712
+  size: 1280, 1280
+  orig: 1280, 1280
+  offset: 0, 0
+  index: -1
+kaleidoscope_extra_dense_particles
+  rotate: false
+  xy: 1273, 33
+  size: 463, 419
+  orig: 463, 419
+  offset: 0, 0
+  index: -1
+lightBack1
+  rotate: false
+  xy: 1284, 454
+  size: 633, 592
+  orig: 633, 592
+  offset: 0, 0
+  index: -1
+lightFront1
+  rotate: false
+  xy: 2, 2
+  size: 708, 708
+  orig: 708, 708
+  offset: 0, 0
+  index: -1
+lightFront2
+  rotate: false
+  xy: 3037, 1284
+  size: 708, 708
+  orig: 708, 708
+  offset: 0, 0
+  index: -1
+outer_circle
+  rotate: false
+  xy: 1284, 1048
+  size: 944, 944
+  orig: 944, 944
+  offset: 0, 0
+  index: -1
+particles01
+  rotate: false
+  xy: 712, 76
+  size: 559, 634
+  orig: 559, 634
+  offset: 0, 0
+  index: -1
+ringlet1
+  rotate: false
+  xy: 1919, 595
+  size: 209, 451
+  orig: 209, 451
+  offset: 0, 0
+  index: -1
+shine
+  rotate: false
+  xy: 2849, 1023
+  size: 191, 190
+  orig: 191, 190
+  offset: 0, 0
+  index: -1
+snail1
+  rotate: false
+  xy: 1919, 514
+  size: 106, 79
+  orig: 106, 79
+  offset: 0, 0
+  index: -1
+swirl1
+  rotate: false
+  xy: 1738, 25
+  size: 224, 165
+  orig: 224, 165
+  offset: 0, 0
+  index: -1

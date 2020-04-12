@@ -1,0 +1,159 @@
+{"frames": {
+
+"intensePulse_01.png":
+{
+	"frame": {"x":1314,"y":1308,"w":448,"h":393},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":448,"h":393},
+	"sourceSize": {"w":448,"h":432}
+},
+"intensePulse_02.png":
+{
+	"frame": {"x":1,"y":1,"w":448,"h":432},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":448,"h":432},
+	"sourceSize": {"w":448,"h":432}
+},
+"intensePulse_03.png":
+{
+	"frame": {"x":451,"y":1,"w":448,"h":432},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":448,"h":432},
+	"sourceSize": {"w":448,"h":432}
+},
+"intensePulse_04.png":
+{
+	"frame": {"x":901,"y":1,"w":448,"h":432},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":448,"h":432},
+	"sourceSize": {"w":448,"h":432}
+},
+"intensePulse_05.png":
+{
+	"frame": {"x":1,"y":435,"w":448,"h":432},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":448,"h":432},
+	"sourceSize": {"w":448,"h":432}
+},
+"intensePulse_06.png":
+{
+	"frame": {"x":451,"y":435,"w":448,"h":432},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":448,"h":432},
+	"sourceSize": {"w":448,"h":432}
+},
+"intensePulse_07.png":
+{
+	"frame": {"x":901,"y":435,"w":448,"h":432},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":448,"h":432},
+	"sourceSize": {"w":448,"h":432}
+},
+"intensePulse_08.png":
+{
+	"frame": {"x":1,"y":869,"w":448,"h":432},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":448,"h":432},
+	"sourceSize": {"w":448,"h":432}
+},
+"intensePulse_09.png":
+{
+	"frame": {"x":435,"y":869,"w":448,"h":432},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":448,"h":432},
+	"sourceSize": {"w":448,"h":432}
+},
+"intensePulse_10.png":
+{
+	"frame": {"x":885,"y":869,"w":448,"h":432},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":448,"h":432},
+	"sourceSize": {"w":448,"h":432}
+},
+"intensePulse_11.png":
+{
+	"frame": {"x":435,"y":1303,"w":448,"h":432},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":448,"h":432},
+	"sourceSize": {"w":448,"h":432}
+},
+"intensePulse_12.png":
+{
+	"frame": {"x":1,"y":1319,"w":448,"h":426},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":448,"h":426},
+	"sourceSize": {"w":448,"h":432}
+},
+"intensePulse_13.png":
+{
+	"frame": {"x":869,"y":1303,"w":443,"h":408},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":443,"h":408},
+	"sourceSize": {"w":448,"h":432}
+},
+"intensePulse_14.png":
+{
+	"frame": {"x":1335,"y":901,"w":405,"h":375},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":375},
+	"sourceSize": {"w":448,"h":432}
+},
+"intensePulse_15.png":
+{
+	"frame": {"x":1351,"y":1,"w":448,"h":282},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":448,"h":282},
+	"sourceSize": {"w":448,"h":432}
+},
+"intensePulse_16.png":
+{
+	"frame": {"x":429,"y":1753,"w":338,"h":263},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":338,"h":263},
+	"sourceSize": {"w":448,"h":432}
+},
+"intensePulse_17.png":
+{
+	"frame": {"x":1351,"y":451,"w":448,"h":271},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":448,"h":271},
+	"sourceSize": {"w":448,"h":432}
+},
+"intensePulse_18.png":
+{
+	"frame": {"x":869,"y":1713,"w":355,"h":276},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":355,"h":276},
+	"sourceSize": {"w":448,"h":432}
+}},
+"animations": {
+	"intensePulse": ["intensePulse_01.png","intensePulse_02.png","intensePulse_03.png","intensePulse_04.png","intensePulse_05.png","intensePulse_06.png","intensePulse_07.png","intensePulse_08.png","intensePulse_09.png","intensePulse_10.png","intensePulse_11.png","intensePulse_12.png","intensePulse_13.png","intensePulse_14.png","intensePulse_15.png","intensePulse_16.png","intensePulse_17.png","intensePulse_18.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "intensePulse.png",
+	"format": "RGBA8888",
+	"size": {"w":1711,"h":2017},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:09f17171c02f96ac2a2074bbde990489:d8daa9e8b2be8a2f926498d7f95e0077:276592ccf5b50c39da844110d75a3ead$"
+}
+}

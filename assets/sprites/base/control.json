@@ -1,0 +1,936 @@
+{
+  "frames": {
+    "arrow_previev_over.png": {
+      "frame": {
+        "x": 821,
+        "y": 696,
+        "w": 46,
+        "h": 55
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 46,
+        "h": 55
+      },
+      "sourceSize": {
+        "w": 46,
+        "h": 55
+      }
+    },
+    "arrow_previev_up.png": {
+      "frame": {
+        "x": 869,
+        "y": 696,
+        "w": 46,
+        "h": 55
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 46,
+        "h": 55
+      },
+      "sourceSize": {
+        "w": 46,
+        "h": 55
+      }
+    },
+    "autoPlayButtonDisabled.png": {
+      "frame": {
+        "x": 824,
+        "y": 440,
+        "w": 126,
+        "h": 51
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 51
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 51
+      }
+    },
+    "autoPlayButtonDown.png": {
+      "frame": {
+        "x": 824,
+        "y": 568,
+        "w": 126,
+        "h": 51
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 51
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 51
+      }
+    },
+    "autoPlayButtonOver.png": {
+      "frame": {
+        "x": 877,
+        "y": 408,
+        "w": 126,
+        "h": 51
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 51
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 51
+      }
+    },
+    "autoPlayButtonUp.png": {
+      "frame": {
+        "x": 877,
+        "y": 536,
+        "w": 126,
+        "h": 51
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 51
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 51
+      }
+    },
+    "betLineButton2Base.png": {
+      "frame": {
+        "x": 859,
+        "y": 408,
+        "w": 15,
+        "h": 15
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 15,
+        "h": 15
+      },
+      "sourceSize": {
+        "w": 15,
+        "h": 15
+      }
+    },
+    "betLineButton2Over.png": {
+      "frame": {
+        "x": 917,
+        "y": 711,
+        "w": 40,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 40,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 40,
+        "h": 40
+      }
+    },
+    "bgPointer.png": {
+      "frame": {
+        "x": 1,
+        "y": 1,
+        "w": 699,
+        "h": 700
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 0,
+        "w": 699,
+        "h": 700
+      },
+      "sourceSize": {
+        "w": 700,
+        "h": 700
+      }
+    },
+    "close_btn_over.png": {
+      "frame": {
+        "x": 707,
+        "y": 753,
+        "w": 45,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 45,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 45,
+        "h": 45
+      }
+    },
+    "close_btn_up.png": {
+      "frame": {
+        "x": 754,
+        "y": 753,
+        "w": 45,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 45,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 45,
+        "h": 45
+      }
+    },
+    "continueDisabled.png": {
+      "frame": {
+        "x": 702,
+        "y": 440,
+        "w": 236,
+        "h": 59
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 236,
+        "h": 59
+      },
+      "sourceSize": {
+        "w": 236,
+        "h": 61
+      }
+    },
+    "continueDown.png": {
+      "frame": {
+        "x": 239,
+        "y": 710,
+        "w": 236,
+        "h": 59
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 236,
+        "h": 59
+      },
+      "sourceSize": {
+        "w": 236,
+        "h": 61
+      }
+    },
+    "continueOver.png": {
+      "frame": {
+        "x": 763,
+        "y": 440,
+        "w": 236,
+        "h": 59
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 236,
+        "h": 59
+      },
+      "sourceSize": {
+        "w": 236,
+        "h": 61
+      }
+    },
+    "continueUp.png": {
+      "frame": {
+        "x": 1,
+        "y": 710,
+        "w": 236,
+        "h": 61
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 236,
+        "h": 61
+      },
+      "sourceSize": {
+        "w": 236,
+        "h": 61
+      }
+    },
+    "FSkeypadBetBalanceBackground.png": {
+      "frame": {
+        "x": 930,
+        "y": 527,
+        "w": 104,
+        "h": 34
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 104,
+        "h": 34
+      },
+      "sourceSize": {
+        "w": 104,
+        "h": 34
+      }
+    },
+    "glowParticle.png": {
+      "frame": {
+        "x": 859,
+        "y": 280,
+        "w": 6,
+        "h": 6
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 6
+      },
+      "sourceSize": {
+        "w": 6,
+        "h": 6
+      }
+    },
+    "indicator.png": {
+      "frame": {
+        "x": 28,
+        "y": 778,
+        "w": 20,
+        "h": 21
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 20,
+        "h": 21
+      },
+      "sourceSize": {
+        "w": 20,
+        "h": 21
+      }
+    },
+    "indicator_active.png": {
+      "frame": {
+        "x": 51,
+        "y": 778,
+        "w": 20,
+        "h": 21
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 20,
+        "h": 21
+      },
+      "sourceSize": {
+        "w": 20,
+        "h": 21
+      }
+    },
+    "indicator_over.png": {
+      "frame": {
+        "x": 74,
+        "y": 778,
+        "w": 20,
+        "h": 21
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 20,
+        "h": 21
+      },
+      "sourceSize": {
+        "w": 20,
+        "h": 21
+      }
+    },
+    "keypadBetBalanceBackground.png": {
+      "frame": {
+        "x": 930,
+        "y": 408,
+        "w": 117,
+        "h": 34
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 117,
+        "h": 34
+      },
+      "sourceSize": {
+        "w": 117,
+        "h": 34
+      }
+    },
+    "keypadSliderBackground.png": {
+      "frame": {
+        "x": 702,
+        "y": 678,
+        "w": 104,
+        "h": 29
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 104,
+        "h": 29
+      },
+      "sourceSize": {
+        "w": 104,
+        "h": 29
+      }
+    },
+    "loading.png": {
+      "frame": {
+        "x": 1,
+        "y": 773,
+        "w": 25,
+        "h": 25
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 25,
+        "h": 25
+      },
+      "sourceSize": {
+        "w": 25,
+        "h": 25
+      }
+    },
+    "paytable_bg.png": {
+      "frame": {
+        "x": 1,
+        "y": 703,
+        "w": 5,
+        "h": 687
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 5,
+        "h": 687
+      },
+      "sourceSize": {
+        "w": 5,
+        "h": 687
+      }
+    },
+    "paytableButtonDisabled.png": {
+      "frame": {
+        "x": 801,
+        "y": 753,
+        "w": 44,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 44,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 44,
+        "h": 45
+      }
+    },
+    "paytableButtonDown.png": {
+      "frame": {
+        "x": 847,
+        "y": 753,
+        "w": 44,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 44,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 44,
+        "h": 45
+      }
+    },
+    "paytableButtonOver.png": {
+      "frame": {
+        "x": 893,
+        "y": 753,
+        "w": 44,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 44,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 44,
+        "h": 45
+      }
+    },
+    "paytableButtonUp.png": {
+      "frame": {
+        "x": 917,
+        "y": 664,
+        "w": 44,
+        "h": 45
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 44,
+        "h": 45
+      },
+      "sourceSize": {
+        "w": 44,
+        "h": 45
+      }
+    },
+    "redHoodBetBg.png": {
+      "frame": {
+        "x": 707,
+        "y": 709,
+        "w": 112,
+        "h": 42
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 112,
+        "h": 42
+      },
+      "sourceSize": {
+        "w": 112,
+        "h": 42
+      }
+    },
+    "redHoodTotalWinBg.png": {
+      "frame": {
+        "x": 702,
+        "y": 1,
+        "w": 277,
+        "h": 163
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 277,
+        "h": 163
+      },
+      "sourceSize": {
+        "w": 277,
+        "h": 163
+      }
+    },
+    "selectorBarBackground.png": {
+      "frame": {
+        "x": 961,
+        "y": 307,
+        "w": 55,
+        "h": 5
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 55,
+        "h": 5
+      },
+      "sourceSize": {
+        "w": 55,
+        "h": 5
+      }
+    },
+    "selectorBarFill.png": {
+      "frame": {
+        "x": 477,
+        "y": 765,
+        "w": 53,
+        "h": 3
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 53,
+        "h": 3
+      },
+      "sourceSize": {
+        "w": 53,
+        "h": 3
+      }
+    },
+    "selectorBarFillDisabled.png": {
+      "frame": {
+        "x": 28,
+        "y": 773,
+        "w": 53,
+        "h": 3
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 53,
+        "h": 3
+      },
+      "sourceSize": {
+        "w": 53,
+        "h": 3
+      }
+    },
+    "selectorPlusDisabled.png": {
+      "frame": {
+        "x": 239,
+        "y": 771,
+        "w": 27,
+        "h": 32
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 27,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 27,
+        "h": 32
+      }
+    },
+    "selectorPlusDown.png": {
+      "frame": {
+        "x": 273,
+        "y": 771,
+        "w": 27,
+        "h": 32
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 27,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 27,
+        "h": 32
+      }
+    },
+    "selectorPlusOver.png": {
+      "frame": {
+        "x": 307,
+        "y": 771,
+        "w": 27,
+        "h": 32
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 27,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 27,
+        "h": 32
+      }
+    },
+    "selectorPlusUp.png": {
+      "frame": {
+        "x": 341,
+        "y": 771,
+        "w": 27,
+        "h": 32
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 27,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 27,
+        "h": 32
+      }
+    },
+    "spinButtonDisabled.png": {
+      "frame": {
+        "x": 867,
+        "y": 1,
+        "w": 100,
+        "h": 99
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 100,
+        "h": 99
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 99
+      }
+    },
+    "spinButtonDown.png": {
+      "frame": {
+        "x": 867,
+        "y": 103,
+        "w": 100,
+        "h": 99
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 100,
+        "h": 99
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 99
+      }
+    },
+    "spinButtonIdle.png": {
+      "frame": {
+        "x": 867,
+        "y": 205,
+        "w": 100,
+        "h": 99
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 100,
+        "h": 99
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 99
+      }
+    },
+    "spinButtonOver.png": {
+      "frame": {
+        "x": 859,
+        "y": 307,
+        "w": 100,
+        "h": 99
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 100,
+        "h": 99
+      },
+      "sourceSize": {
+        "w": 100,
+        "h": 99
+      }
+    },
+    "wandparticle.png": {
+      "frame": {
+        "x": 954,
+        "y": 633,
+        "w": 12,
+        "h": 12
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 12,
+        "h": 12
+      },
+      "sourceSize": {
+        "w": 12,
+        "h": 12
+      }
+    },
+    "win_field.png": {
+      "frame": {
+        "x": 477,
+        "y": 710,
+        "w": 228,
+        "h": 53
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 228,
+        "h": 53
+      },
+      "sourceSize": {
+        "w": 228,
+        "h": 53
+      }
+    },
+    "winEnd.png": {
+      "frame": {
+        "x": 702,
+        "y": 280,
+        "w": 155,
+        "h": 158
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 155,
+        "h": 158
+      },
+      "sourceSize": {
+        "w": 160,
+        "h": 160
+      }
+    },
+    "x_box.png": {
+      "frame": {
+        "x": 877,
+        "y": 664,
+        "w": 22,
+        "h": 22
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 22,
+        "h": 22
+      },
+      "sourceSize": {
+        "w": 22,
+        "h": 22
+      }
+    },
+    "x_box_close.png": {
+      "frame": {
+        "x": 930,
+        "y": 633,
+        "w": 22,
+        "h": 22
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 22,
+        "h": 22
+      },
+      "sourceSize": {
+        "w": 22,
+        "h": 22
+      }
+    }
+  },
+  "meta": {
+    "app": "https://www.codeandweb.com/texturepacker",
+    "version": "1.0",
+    "image": "control.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 967,
+      "h": 799
+    },
+    "scale": "1",
+    "smartupdate": "$TexturePacker:SmartUpdate:f1ec35ea82151c335266d01229c35296:32d801785e648ee1c59c7bba57ce5ec0:98c9dc2202ac7ae063c49f330998c9f0$"
+  }
+}
