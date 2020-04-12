@@ -850,6 +850,11 @@ App.Gameplay = new Screen({
                                 {
                                     name: 'game board symbols wildcard container',
                                     childs: []
+                                },
+                                {
+                                    name: 'game board symbols chest box container',
+                                    position: [0, 90],
+                                    childs: []
                                 }
                             ]
                         },
@@ -857,64 +862,6 @@ App.Gameplay = new Screen({
                             name: 'test animation',
                             position: [0, -45],
                             childs: []
-                        },
-                    ]
-                }
-            ]
-        },
-        {
-            name: 'ChestContainer',
-            // visible: false,
-            scaleStrategyPortrait: ['fit-to-screen', 1920, 1080],
-            scaleStrategyLandscape: ['fit-to-screen', 1920, 1080],
-            childs: [
-                {
-                    name: 'cheat animation container',
-                    visible: false,
-                    position: [0, 40],
-                    childs: [
-                        {
-                            name: 'cheat overlay background',
-                            type: 'graphics',
-                            alpha: 0.5,
-                            position: [0, -40],
-                            draw: [
-                                ['beginFill', 0x000000],
-                                ['drawRect', [-1920 / 2, -1080 / 2, 1920, 1080]]
-                            ]
-                        },
-                        {
-                            name: 'cheat spine 1',
-                            type: 'spine',
-                            event: 'cheat box',
-                            spineData: 'chestAnimation',
-                            spineAtlas: 'chestAnimation_atlas',
-                            spineTexture: 'chestAnimation_image',
-                            status: 'not',
-                            scale: 0.5,
-                            position: [-520, 0],
-                        },
-                        {
-                            name: 'cheat spine 3',
-                            type: 'spine',
-                            event: 'cheat box',
-                            spineData: 'chestAnimation',
-                            spineAtlas: 'chestAnimation_atlas',
-                            spineTexture: 'chestAnimation_image',
-                            status: 'not',
-                            scale: 0.5,
-                            position: [0, 0],
-                        },
-                        {
-                            name: 'cheat spine 5',
-                            type: 'spine',
-                            event: 'cheat box',
-                            spineData: 'chestAnimation',
-                            spineAtlas: 'chestAnimation_atlas',
-                            spineTexture: 'chestAnimation_image',
-                            status: 'not',
-                            scale: 0.5,
-                            position: [520, 0],
                         },
                     ]
                 }
@@ -1698,6 +1645,116 @@ App.Gameplay = new Screen({
                                         fill: 0xf9e482,
                                         fontSize: '40px',
                                         fontFamily: 'NETENT_MyriadPro-Bold'
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            name: 'ChestContainer',
+            scaleStrategyPortrait: ['fit-to-screen', 1920, 1080],
+            scaleStrategyLandscape: ['fit-to-screen', 1920, 1080],
+            childs: [
+                {
+                    name: 'chest animation container',
+                    visible: false,
+                    position: [0, 40],
+                    childs: [
+                        {
+                            name: 'chest overlay background',
+                            type: 'graphics',
+                            alpha: 0.5,
+                            position: [0, -40],
+                            event: 'disabled button',
+                            draw: [
+                                ['beginFill', 0x000000],
+                                ['drawRect', [-1920 / 2, -1080 / 2, 1920, 1080]]
+                            ]
+                        },
+                        {
+                            name: 'chest spine 1',
+                            type: 'spine',
+                            event: 'chest box',
+                            spineData: 'chestAnimation',
+                            spineAtlas: 'chestAnimation_atlas',
+                            spineTexture: 'chestAnimation_image',
+                            status: 'not',
+                            scale: 0.5,
+                            position: [-520, 0],
+                        },
+                        {
+                            name: 'chest spine 3',
+                            type: 'spine',
+                            event: 'chest box',
+                            spineData: 'chestAnimation',
+                            spineAtlas: 'chestAnimation_atlas',
+                            spineTexture: 'chestAnimation_image',
+                            status: 'not',
+                            scale: 0.5,
+                            position: [0, 0],
+                        },
+                        {
+                            name: 'chest spine 5',
+                            type: 'spine',
+                            event: 'chest box',
+                            spineData: 'chestAnimation',
+                            spineAtlas: 'chestAnimation_atlas',
+                            spineTexture: 'chestAnimation_image',
+                            status: 'not',
+                            scale: 0.5,
+                            position: [520, 0],
+                        },
+                    ]
+                },
+                {
+                    name: 'chest text animation container',
+                    visible: false,
+                    childs: [
+                        {
+                            name: 'chest back animation',
+                            type: 'movie-clip',
+                            frames: [
+                                'intensePulse_01.png', 'intensePulse_02.png', 'intensePulse_03.png', 'intensePulse_04.png', 'intensePulse_05.png', 'intensePulse_06.png', 'intensePulse_07.png', 'intensePulse_08.png', 'intensePulse_09.png',
+                                'intensePulse_10.png', 'intensePulse_11.png', 'intensePulse_12.png', 'intensePulse_13.png', 'intensePulse_14.png', 'intensePulse_15.png', 'intensePulse_16.png', 'intensePulse_17.png', 'intensePulse_18.png'
+                            ],
+                            speed: 0.2,
+                            loop: false
+                        },
+                        {
+                            name: 'chest text container',
+                            childs: [
+                                {
+                                    name: 'chest count text',
+                                    type: 'text',
+                                    text: ' +2 ',
+                                    position: [0, -50],
+                                    styles: {
+                                        fontFamily: 'pfdindisplaypro-reg-webfont',
+                                        fontSize: '150px',
+                                        fill: 0xffffff,
+                                        align: 'center',
+                                        fontWeight: 'bold',
+                                        lineJoin: "round",
+                                        stroke: "#aa3bbf",
+                                        strokeThickness: 7,
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    text: 'FREE SPINS',
+                                    position: [0, 50],
+                                    styles: {
+                                        fontFamily: 'pfdindisplaypro-reg-webfont',
+                                        fontSize: '50px',
+                                        fill: 0xffffff,
+                                        align: 'center',
+                                        fontWeight: 'bold',
+                                        lineJoin: "round",
+                                        stroke: "#aa3bbf",
+                                        strokeThickness: 7,
                                     }
                                 }
                             ]
@@ -3694,13 +3751,13 @@ App.Gameplay = new Screen({
 
         },
 
-        'Gameplay cheat box down': function(container, e) {
+        'Gameplay chest box down': function(container, e) {
             let types = ['bonus', 'freespin', 'coinwin'];
             let name = container.name;
             if(this[name].status !== 'ready') return;
-            this['cheat spine 1'].status = 'not';
-            this['cheat spine 3'].status = 'not';
-            this['cheat spine 5'].status = 'not';
+            this['chest spine 1'].status = 'not';
+            this['chest spine 3'].status = 'not';
+            this['chest spine 5'].status = 'not';
             this.selectRandomChest(name, 0);
         },
 
@@ -4179,10 +4236,16 @@ App.Gameplay = new Screen({
                     position: [mostLeft + this.COLUMNS_OFFSET * i, -1 * (this.ROWS_COUNT - 1) / 2 * this.ROWS_OFFSET - (this.ROWS_COUNT + 1) * this.ROWS_OFFSET]
                 });
 
+                let reelChestbox = this.buildChild(this['game board symbols chest box container'], {
+                    name: 'reel chest box ' + i,
+                    position: [mostLeft + this.COLUMNS_OFFSET * i, -1 * (this.ROWS_COUNT - 1) / 2 * this.ROWS_OFFSET - (this.ROWS_COUNT + 1) * this.ROWS_OFFSET]
+                });
+
                 this.reels.push({
                     sprite: reelSprite,
                     spriteHighlight: reelSpriteHighlight,
                     wildHighlight: reelWildHighlight,
+                    chestBox: reelChestbox,
                     speed: null,
                     completeSymbol: null,
                     completed: null,
@@ -4209,6 +4272,30 @@ App.Gameplay = new Screen({
                         position: [0, this.ROWS_OFFSET * j]
                     });
 
+                    this.buildChild(this['reel chest box ' + i], {
+                        name: 'reel ' + i + ' symbol chest box container ' + j,
+                        position: [0, this.ROWS_OFFSET * j]
+                    });
+
+                    this.buildChild(this['reel ' + i + ' symbol chest box container ' + j], {
+                        name: 'reel ' + i + ' symbol ' + j + ' chest box',
+                        type: 'spine',
+                        spineData: 'chestAnimation',
+                        spineAtlas: 'chestAnimation_atlas',
+                        spineTexture: 'chestAnimation_image',
+                        scale: 0.75,
+                        visible: false
+                    });
+
+                    this.buildChild(this['reel ' + i + ' symbol chest box container ' + j], {
+                        name: 'reel ' + i + ' symbol ' + j + ' chest box glow',
+                        type: 'sprite',
+                        position: [0, -60],
+                        image: 'intensePulse_10.png',
+                        visible: false
+                    });
+
+                        // this['reel ' + i + ' symbol ' + j + ' chest box'].state.setAnimation(0, 'freespins', true);
                     this.buildChild(this['reel ' + i + ' symbol wildhighlight container ' + j], {
                         name: 'reel ' + i + ' symbol ' + j + ' wildhighlight',
                         position: [0, 0],
@@ -4316,34 +4403,30 @@ App.Gameplay = new Screen({
                 this['logo spine'].state.setAnimation(0, 'Logo+frame_reveal', false);
             }, 1000);
 
-            var self = this;
             this['main spine'].state.addListener({
-                complete: function(entry) {
+                complete: (entry) => {
                     if(this.tutorial_mode === false)
                         return;
                     if(entry.animation.name === "1_RandomFeature") {
-                        self['tutorial title'].text = "FAIRY WILD SPIN";
-                        self['tutorial title'].text = "BEWARE THE WOLF BONUS";
-                        self['main spine'].state.setAnimation(0, '3_Bonusgame', false);
+                        this['tutorial title'].text = "FAIRY WILD SPIN";
+                        this['tutorial title'].text = "BEWARE THE WOLF BONUS";
+                        this['main spine'].state.setAnimation(0, '3_Bonusgame', false);
                     } else if(entry.animation.name === "3_Bonusgame") {
-                        self['tutorial title'].text = "FREE SPINS";
-                        self['main spine'].state.setAnimation(0, '4_Freespins', false);
+                        this['tutorial title'].text = "FREE SPINS";
+                        this['main spine'].state.setAnimation(0, '4_Freespins', false);
                     } else if(entry.animation.name === "4_Freespins") {
-                        self['tutorial title'].text = "STICKY WILD RE-SPINS";
-                        self['main spine'].state.setAnimation(0, '5_StickyWilds', false);
+                        this['tutorial title'].text = "STICKY WILD RE-SPINS";
+                        this['main spine'].state.setAnimation(0, '5_StickyWilds', false);
                     } else if(entry.animation.name === "5_StickyWilds") {
-                        self['tutorial title'].text = "FAIRY MAGIC SPIN";
-                        self['main spine'].state.setAnimation(0, '1_RandomFeature', false);
+                        this['tutorial title'].text = "FAIRY MAGIC SPIN";
+                        this['main spine'].state.setAnimation(0, '1_RandomFeature', false);
                     }
                 }
             });
-            this['cheat spine 1'].hackTextureBySlotName('feature_icon', this.getTexture("coin_win.png"));
-            this['cheat spine 3'].hackTextureBySlotName('feature_icon', this.getTexture("free_spins.png"));
-            this['cheat spine 5'].hackTextureBySlotName('feature_icon', this.getTexture("bonus_game_icon.png"));
-            this['cheat spine 1'].state.addListener({
-                complete: entry => {
-                }
-            })
+            this['chest spine 1'].hackTextureBySlotName('feature_icon', this.getTexture("coin_win.png"));
+            this['chest spine 3'].hackTextureBySlotName('feature_icon', this.getTexture("free_spins.png"));
+            this['chest spine 5'].hackTextureBySlotName('feature_icon', this.getTexture("bonus_game_icon.png"));
+            this['chest back animation'].gotoAndPlay(0)
         },
 
         'Gameplay resize': function () {
@@ -4659,6 +4742,25 @@ App.Gameplay = new Screen({
         // return;
         this.winAnimationMode = false;
         this.is_bonus = false;
+        this.boxCardsPos = [];
+        this.freespinRetrigger = false;
+        this.retriggerDelay = 0;
+        this.scatterCount = 0;
+
+        if(this.reBoxSprites.length > 0) {
+            this.reBoxSprites.forEach(item => {
+                item.skeleton.setToSetupPose();
+                item.state.tracks = [];
+            });
+            this.tween({
+                set: ['visible', false]
+            }, this.reBoxSprites);
+            this.tween({
+                set: ['visible', false]
+            }, this.reBoxGlowSprites);
+            this.reBoxSprites = [];
+            this.reBoxGlowSprites = [];
+        }
 
         if (this.credits.value - this.bet.amount >= 0) {
             if (this.isfreespin === false) {
@@ -4683,10 +4785,9 @@ App.Gameplay = new Screen({
         this.second_reel = false;
         this.third_reel = false;
 
+        this['character spine'].state.setAnimation(0, 'walk_loop', true);
         this.startHillAnimation();
         this.starRabbitAnimation();
-
-        this['character spine'].state.setAnimation(0, 'walk_loop', true);
 
         this.setStatusControlBar(['start button', 'maxbet button', 'coin bar up', 'coin bar down', 'level bar down', 'level bar up'], this.const.STATUS_TYPE.DISABLED);
         this.setStatusControlBar(['auto start button'], this.const.STATUS_TYPE.NORMAL);
@@ -4754,25 +4855,36 @@ App.Gameplay = new Screen({
                         this.freespin_count = 1;
                     }
 
-                    //In bonus case
-                    if (arrRetval[i].retType === 2) {
-                        this.isfreespin = true;
-                        this.auto_mode = false;
-                        this.freespin_animation = true;
-                        this.freespin_count = arrRetval[i].count;
-                        this.freespin_first_animation = true;
-                    }
-
                     //Free spin case
-                    if (arrRetval[i].retType === 4) {
+                    if (arrRetval[i].retType === 2) {
                         let scatter = arrRetval[i];
-                        if(scatter.arrMatchedCardsXPos.length > 2) {
+                        if(scatter.scatterCardXPos.length > 2) {
                             this.freespin_count = scatter.count;
                             this.total_freespin_amount = 0;
                             this.isfreespin = this.freespin_count > 0;
                             this.freespin_index = 0;
                             this.isfreespinStart = true;
                         }
+                    }
+
+                    //Free spin Retrigger case
+                    if (arrRetval[i].retType === 3) {
+                        if(this.isfreespin) {
+                            this.freespinRetrigger = true;
+                            this.regriggerCount = arrRetval[i].count;
+                            this.freespin_count += arrRetval[i].count;
+                            if(arrRetval[i].scatterCardXPos.length > 0) {
+                                for(let k = 0 ; k < arrRetval[i].scatterCardXPos.length; k++) {
+                                    this.boxCardsPos.push([arrRetval[i].scatterCardXPos[k], arrRetval[i].scatterCardYPos[k]])
+                                }
+                            }
+                        }
+                    }
+
+                    //Coin win case
+                    if (arrRetval[i].retType === 1) {
+                        this.isCoinwin = true;
+                        this.coinwinAmount = arrRetval[i].win;
                     }
                 }
 
@@ -4782,14 +4894,13 @@ App.Gameplay = new Screen({
                     if(this.freespin_count !== this.freespin_index) {
                         this.total_freespin_amount += serverData.response.winAmount;
                         this.freespin_index++;
-                        // this['freespin count text'].text = this.freespin_count - this.freespin_index;
                     }
                     if((this.freespin_count - 1) === this.freespin_index) {
-                        this.freespinEnd = true;
+                        this.isfreespinEnd = true;
                     }
                 }
                 if (arrRetval.length !== 0) {
-                    if (arrRetval[0].retType === 3) {
+                    /*if (arrRetval[0].retType === 3) {
                         // In Case Jackpot
 
                         this.is_bonus = true;
@@ -4801,7 +4912,7 @@ App.Gameplay = new Screen({
                         this.spinCombination.winData.winLines = this.generateWinData();
                     } else if (arrRetval[0].retType === 1) {
 
-                    }
+                    }*/
                 }
             } else {
 
@@ -4891,6 +5002,9 @@ App.Gameplay = new Screen({
 
                 this.setSymbolTexture(this.reels[reel].sprite.children[i].name, App.SymbolsNames[imageName]);
 
+                if(imageName === 'freespin' && reel !== 1 && reel !== 3) {
+                    this.scatterCount ++;
+                }
                 /*if (imageName === "Symbol_Bonus" && i !== 0 && i !== 4) {
                     if (reel === 0) {
                         this.playSound('bonus_one', {}, {volume: this.sound_mode ? 1 : 0, loop: false});
@@ -5022,17 +5136,17 @@ App.Gameplay = new Screen({
     completeSpin: function () {
         this.setStatusControlBar(['start button', 'maxbet button', 'auto start button'], this.const.STATUS_TYPE.NORMAL);
 
+        this['character spine'].state.setAnimation(0, 'idle1', true);
         this.stopHillAnimation();
         this.stopRabbitAnimation();
-        this['character spine'].state.setAnimation(0, 'idle1', true);
 
         if (this.wildReelArray && this.isfreespin === false) {
             this.wildAnimation(this.wildReelArray);
         }
 
-        // if (this.isfreespin === true && this.freespin_count === 0) {
-        //     this.hideWildanimation();
-        // }
+        if (this.isfreespin === true && this.freespin_count === 0) {
+            this.hideWildanimation();
+        }
 
         if (this.isfreespin && this.isfreespinStart === true) {
             this.isfreespinStart = false;
@@ -5040,9 +5154,18 @@ App.Gameplay = new Screen({
             this.tempCurrentAutoAmount = this.current_auto_amount;
             this.auto_mode = false;
             this.current_auto_amount = 0;
+            this.tween({
+                to: ['y', 600, 300]
+            }, 'control panel container wrapper');
             setTimeout(() => {
                 this.boxShowingAnimation();
-            }, 3000);
+            }, 500);
+        }
+
+        if (this.isfreespin && this.isfreespinEnd === true) {
+            this.isfreespinEnd = false;
+            this.isfreespin = false;
+            this.endFreespinAnimation();
         }
 
         if (this.current_auto_amount === 0 || this.state === 'ready') {
@@ -5094,8 +5217,10 @@ App.Gameplay = new Screen({
                     this.server_win_amount.drawed = this.server_win_amount.value;
                     this.refreshPanelValues();
 
-                    // this.drawJackpot();
-
+                    if (this.isfreespin && this.freespinRetrigger === true) {
+                        this.retriggerDelay = 3000;
+                        this.boxRetriggerAnimation(this.boxCardsPos);
+                    }
                     /*if (this.freespin_end && this.isfreespin) {
                         setTimeout(() => {
                             this['bonus_win title'].text = this.total_freespin_amount;
@@ -5115,7 +5240,7 @@ App.Gameplay = new Screen({
                         if (this.state === 'ready' && this.auto_mode || (this.isfreespin === true && this.freespin_index > 0)) {
                             this.spin();
                         }
-                    }, 500);
+                    }, 500 + this.retriggerDelay);
                 }
             } else {
                 this.credits.value += parseInt(this.bonus_amount);
@@ -5887,6 +6012,9 @@ App.Gameplay = new Screen({
             case 'freespin start button':
                 this.buttonHandleFreeStartButton(container);
                 break;
+            case 'freespin continue button':
+                this.buttonHandleContinueButton(container);
+                break;
             case 'maxbet button':
                 if (this.auto_mode) {
                     return;
@@ -6156,7 +6284,7 @@ App.Gameplay = new Screen({
         this['BG_fs_squizzed'].visible = true;
         this['control panel container wrapper'].visible = false;
         this['freespin control panel container wrapper'].visible = true;
-        this['cheat animation container'].visible = false;
+        this['chest animation container'].visible = false;
         // this['ControlPanelContainer'].visible = false;
         // this['back_fire'].visible = false;
         // this['background container wrapper'].visible = false;
@@ -6165,6 +6293,13 @@ App.Gameplay = new Screen({
         setTimeout(() => {
             this.spin();
         }, 500);
+    },
+
+    buttonHandleContinueButton: function(container) {
+        this['Bonus freespin outro container'].visible = false;
+        this['BG_fs_squizzed'].visible = false;
+        this['control panel container wrapper'].visible = true;
+        this['freespin control panel container wrapper'].visible = false;
     },
 
     buttonHandlerCloseDialog: function (container) {
@@ -6268,8 +6403,14 @@ App.Gameplay = new Screen({
         this.animFieldPoints('bet bar', this.bet.amount.toString());
         this.animFieldPoints('total_bet bar', this.bet.amount.toString());
 
+        this['freespin betamount text'].text = this.bet.amount.toString();
+
         if (this.auto_mode) {
             this.animFieldPoints('autoamount', this.current_auto_amount);
+        }
+        if (this.isfreespin) {
+            this['freespin played count text'].text = `${this.freespin_index} of ${this.freespin_count}`;
+            this['freespin total win text'].text = `${this.total_freespin_amount}`;
         }
 
         if (this.auto_mode === false) {
@@ -6280,7 +6421,7 @@ App.Gameplay = new Screen({
     },
 
     selectRandomChest: function(name, type) {
-        let names = ['cheat spine 1', 'cheat spine 3', 'cheat spine 5'];
+        let names = ['chest spine 1', 'chest spine 3', 'chest spine 5'];
         let textures = ['free_spins.png', 'coin_win.png', 'bonus_game_icon.png'];
         let j = 0;
         for(let i = 0 ; i < names.length; i++) {
@@ -6304,9 +6445,9 @@ App.Gameplay = new Screen({
                     set: [['visible', 1], ['alpha', 0], ['scale', 1.6]],
                     to: [['alpha', 1, 500], ['scale', 1.5, 2000]]
                 }, 'Bonus freespin intro container');
-                this['cheat spine 1'].status = 'ready';
-                this['cheat spine 3'].status = 'ready';
-                this['cheat spine 5'].status = 'ready';
+                this['chest spine 1'].status = 'ready';
+                this['chest spine 3'].status = 'ready';
+                this['chest spine 5'].status = 'ready';
             }
         }, 7000);
     },
@@ -6465,15 +6606,21 @@ App.Gameplay = new Screen({
         // var response = '{"error":"0","response":{"initCards":[[3,4,7],[5,0,4],[8,5,9],[1,4,10],[5,3,11]],"arrRetVal":[{"retType":7,"wildReelAry":[11]}],"betAmount":20,"winAmount":0,"balance":41060}}';
         // var response = '{"error":"0","response":{"initCards":[[11,8,2],[9,10,10],[6,5,6],[4,2,6],[6,5,8]],"arrRetVal":[{"retType":7,"wildReelAry":[4,5]}],"betAmount":20,"winAmount":0,"balance":41020}}';
 
-        var response = {"error":"0","response":{"valid":1,"initCards":[[11,1,7],[0,11,2],[1,3,11],[8,9,5],[5,8,3]],
+        var response = [
+            {"error":"0","response":{"initCards":[[4,7,9],[6,9,6],[2,9,8],[1,7,7],[0,8,8]],"arrRetVal":[{"retType":0,"win":2,"linePosIdx":11,"cardCount":3},{"retType":0,"win":2,"linePosIdx":19,"cardCount":3}],"betAmount":20,"winAmount":4,"balance":41698}},
+            {"error":"0","response":{"initCards":[[4,7,9],[6,9,6],[2,9,8],[1,7,7],[0,8,8]],"arrRetVal":[{"retType":3,"count":5,"scatterCardXPos":[0, 4],"scatterCardYPos":[1, 0]}],"betAmount":20,"winAmount":4,"balance":41698}},
+            {
+                "error":"0","response":{"valid":1,"initCards":[[11,1,7],[0,11,2],[1,3,11],[8,9,5],[5,8,3]],
                 "arrRetVal":[
-                    {"retType":4,"arrMatchedCardsXPos":[0,1,2],
-                        "arrMatchedCardsYPos":[0,1,2],"win":5,
+                    {"retType":2,"scatterCardXPos":[0,1,2],
+                        "scatterCardYPos":[0,1,2],"win":5,
                         "count": 10
                     }
                 ],
-                "betAmount":30,"originalBetAmount":30,"winAmount":32,"winType":0, "balance":13000}};
-        return response;
+                "betAmount":30,"originalBetAmount":30,"winAmount":32,"winType":0, "balance":13000}
+            }
+        ];
+        return response[this.isfreespin ? Math.floor(Math.random() * 2) : 2];
     },
 
     getInitData: function () {
@@ -6656,7 +6803,7 @@ App.Gameplay = new Screen({
     },
 
     wildAnimation: function (wildReelAry) {
-        this.isfreespin = true;
+        // this.isfreespin = true;
         this.wildhighlightSprites = [];
         for (let i = 0; i < wildReelAry.length; i++) {
             let x_pos = Math.floor(wildReelAry[i] / 3);
@@ -6682,6 +6829,69 @@ App.Gameplay = new Screen({
             ]
         }, this.wildhighlightSprites)
         this.isfreespin = false;
+    },
+
+    boxRetriggerAnimation: function(boxCardsPos) {
+        this.reBoxSprites = [];
+        this.reBoxGlowSprites = [];
+        for (let i = 0; i < boxCardsPos.length; i++) {
+            let x_pos = boxCardsPos[i][0];
+            let y_pos = boxCardsPos[i][1];
+            this.reBoxSprites.push(this.reels[x_pos].chestBox.children[this.ROWS_COUNT + 1 + y_pos].children[0].params.name);
+            this.reBoxGlowSprites.push(this.reels[x_pos].chestBox.children[this.ROWS_COUNT + 1 + y_pos].children[0].params.name + ' glow');
+        }
+        this.tween({
+            name: 'win-animation',
+            to: [
+                ['visible', true]
+            ]
+        }, this.reBoxSprites);
+        this.reBoxSprites.forEach(item => {
+            if(item !== undefined) {
+                item.lastTime = null;
+                item.state.clearTrack(0);
+                item.state.setAnimation(0, 'freespins', false);
+            }
+        });
+        setTimeout(() => {
+            this['chest count text'].text = ` +${this.regriggerCount} `;
+            this.tween({
+                to: [
+                    ['visible', true]
+                ]
+            }, this.reBoxGlowSprites);
+            this.reBoxGlowSprites.forEach(item => {
+                let diff = this.getAbsolutPosDiff(item.name);
+                console.log(diff);
+                this.tween({
+                    to: [
+                        ['x', this[item.name].x + diff.x, 300],
+                        ['y', this[item.name].y + diff.y, 300],
+                    ],
+                    next: {
+                        to: ['visible', true, 500],
+                        next: {
+                            set: [
+                                ['visible', 0],
+                                ['x', this[item.name].x],
+                                ['y', this[item.name].y]
+                            ]
+                        }
+                    }
+                }, item.name);
+            });
+            setTimeout(() => {
+                this['chest text animation container'].visible = true;/*
+                this.tween({
+                    set: [['visible', 1], ['alpha', 0]],
+                    to: ['alpha', 1, 400]
+                }, 'chest text animation container');*/
+                this['chest back animation'].gotoAndPlay(0);
+                setTimeout(() => {
+                    this['chest text animation container'].visible = false;
+                }, 1500);
+            }, 500);
+        }, 500);
     },
 
     hideWinanimation: function () {
@@ -6802,16 +7012,33 @@ App.Gameplay = new Screen({
     },
 
     boxShowingAnimation: function() {
-        this['cheat animation container'].visible = true;
-        this['cheat overlay background'].viisble = true;
-        this['cheat spine 1'].state.setAnimation(0, 'shake0', false);
-        this['cheat spine 3'].state.setAnimation(0, 'shake1', false);
-        this['cheat spine 5'].state.setAnimation(0, 'shake2', false);
+        this.tween({
+            set: [['visible', 1], ['alpha', 0]],
+            to: ['alpha', 1, 300]
+        }, 'chest animation container');
+        this['chest spine 1'].state.setAnimation(0, 'shake0', false);
+        this['chest spine 3'].state.setAnimation(0, 'shake1', false);
+        this['chest spine 5'].state.setAnimation(0, 'shake2', false);
         setTimeout(() => {
-            this['cheat spine 1'].status = 'ready';
-            this['cheat spine 3'].status = 'ready';
-            this['cheat spine 5'].status = 'ready';
+            this['chest spine 1'].status = 'ready';
+            this['chest spine 3'].status = 'ready';
+            this['chest spine 5'].status = 'ready';
         }, 1000);
+    },
+
+    getAbsolutPosDiff: function(name) {
+        let x = name.split(" ")[1];
+        let y = name.split(" ")[3] - 1 - this.ROWS_COUNT;
+        return {
+            x: this.COLUMNS_OFFSET * (2 - x),
+            y: this.ROWS_OFFSET * (1 - y)
+        }
+    },
+
+    endFreespinAnimation: function() {
+        this['Bonus freespin outro container'].visible = true;
+        this['Bonus freespin total amount text'].text = this.total_freespin_amount;
+        this['control panel container wrapper'].position.y = 404;
     },
 
     refreshHelpPage: function (number) {
@@ -6839,6 +7066,25 @@ App.Gameplay = new Screen({
     },
 
     showBigwinContainer: function(score) {
+        this['bigwin content'].text = score;
+        this['bigwin spine'].stateData.setMixByName('idle', 'finish', 0.2);
+        this['bigwin spine'].stateData.setMixByName('finish', 'idle', 0.2);
+        this['bigwin spine'].state.setAnimation(0, 'idle', true);
+        this.tween({
+            to: [
+                ['alpha', 1, 500, 0, Power1.easeOut],
+                ['visible', true, 500, 0, Power1.easeOut],
+            ]
+        }, 'BigwinContainer');
+        setTimeout(() => {
+            this.state = 'ready';
+            this.hideBigwinContainer();
+            if(this.auto_mode)
+                this.spin();
+        }, 5000);
+    },
+
+    showCoinwinContainer: function(score) {
         this['bigwin content'].text = score;
         this['bigwin spine'].stateData.setMixByName('idle', 'finish', 0.2);
         this['bigwin spine'].stateData.setMixByName('finish', 'idle', 0.2);
@@ -6909,6 +7155,7 @@ App.Gameplay = new Screen({
     bonus_active: [],
 
     wildhighlightSprites: [],
+    reBoxSprites: [],
 
     tutorial_mode: true,
 
@@ -6916,5 +7163,6 @@ App.Gameplay = new Screen({
         [[-520, -265], [-260, -265], [0, -265], [260, -265], [520, -265]],
         [[-520, 0], [-260, 0], [0, 0], [260, 0], [520, 0]],
         [[-520, 265], [-260, 265], [0, 265], [260, 265], [520, 265]],
-    ]
+    ],
+    scatterCount: 0,
 });
