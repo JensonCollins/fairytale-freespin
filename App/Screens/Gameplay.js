@@ -3752,13 +3752,17 @@ App.Gameplay = new Screen({
         },
 
         'Gameplay chest box down': function(container, e) {
-            let types = ['bonus', 'freespin', 'coinwin'];
             let name = container.name;
             if(this[name].status !== 'ready') return;
             this['chest spine 1'].status = 'not';
             this['chest spine 3'].status = 'not';
             this['chest spine 5'].status = 'not';
-            this.selectRandomChest(name, 0);
+            if(this.freespinType === 0) {
+                this.playSound('pickAndClickFS', {}, {volume: this.sound_mode ? 0.5 : 0, loop: false});
+            } else if(this.freespinType === 1) {
+                this.playSound('pickAndClickCoin', {}, {volume: this.sound_mode ? 0.5 : 0, loop: false});
+            }
+            this.selectRandomChest(name, this.freespinType);
         },
 
         'overlay down': function () {
@@ -4699,8 +4703,6 @@ App.Gameplay = new Screen({
 
             App.escalibur.Jackpot.value = parseFloat(data.amount);
 
-            this.drawJackpot();
-
         },
     },
 
@@ -4746,6 +4748,8 @@ App.Gameplay = new Screen({
         this.freespinRetrigger = false;
         this.retriggerDelay = 0;
         this.scatterCount = 0;
+        this.freespinType = -1;
+        this.isCoinwin = false;
 
         if(this.reBoxSprites.length > 0) {
             this.reBoxSprites.forEach(item => {
@@ -4852,13 +4856,14 @@ App.Gameplay = new Screen({
 
                     if (arrRetval[i].retType === 7) {
                         this.wildReelArray = arrRetval[i].wildReelAry;
-                        this.freespin_count = 1;
+                        this.wildspinCount = 1;
                     }
 
                     //Free spin case
                     if (arrRetval[i].retType === 2) {
                         let scatter = arrRetval[i];
                         if(scatter.scatterCardXPos.length > 2) {
+                            this.freespinType = 0;
                             this.freespin_count = scatter.count;
                             this.total_freespin_amount = 0;
                             this.isfreespin = this.freespin_count > 0;
@@ -4883,6 +4888,7 @@ App.Gameplay = new Screen({
 
                     //Coin win case
                     if (arrRetval[i].retType === 1) {
+                        this.freespinType = 1;
                         this.isCoinwin = true;
                         this.coinwinAmount = arrRetval[i].win;
                     }
@@ -4954,8 +4960,14 @@ App.Gameplay = new Screen({
                         if (stopReelInterval) clearInterval(stopReelInterval);
 
                         this.timeout(() => {
-
-                            this.stopReel(i);
+                            if(this.scatterCount === 2 && i !== 3) {
+                                this.reels[i].speed = 10;
+                                setTimeout(() => {
+                                    this.stopReel(i);
+                                }, 3000);
+                            } else {
+                                this.stopReel(i);
+                            }
 
                         }, this.REELS_STOP_TIMEOUT + i * this.REELS_STOP_DELAY);
 
@@ -5005,89 +5017,6 @@ App.Gameplay = new Screen({
                 if(imageName === 'freespin' && reel !== 1 && reel !== 3) {
                     this.scatterCount ++;
                 }
-                /*if (imageName === "Symbol_Bonus" && i !== 0 && i !== 4) {
-                    if (reel === 0) {
-                        this.playSound('bonus_one', {}, {volume: this.sound_mode ? 1 : 0, loop: false});
-                        this.first_reel = true;
-                    } else if (reel === 1 && this.first_reel) {
-                        this.playSound('bonus_two', {}, {volume: this.sound_mode ? 1 : 0, loop: false});
-                        this.second_reel = true;
-                    } else if (reel === 2 && this.first_reel && this.second_reel) {
-                        this.third_reel = true;
-                        this.playSound('bonus_three', {}, {volume: this.sound_mode ? 1 : 0, loop: false});
-                        this.isfreespin = true;
-                        this.bonus_highlights.push(this.reels[reel].spriteHighlight.children[i].children[0].params.name.replace('crisp', 'highlight'));
-                        this.bonus_active.push(this.reels[reel].sprite.children[i]);
-                    } else {
-                        continue;
-                    }
-
-                    this.playSound(imageName, {}, {volume: this.sound_mode ? 1 : 0, loop: false});
-
-                    activeSprites.push(this.reels[reel].sprite.children[i]);
-                    highlightSprites.push(this.reels[reel].spriteHighlight.children[i].children[0].params.name.replace('crisp', 'highlight'));
-                    this.bonus_highlights.push(this.reels[reel].spriteHighlight.children[i].children[0].params.name.replace('crisp', 'highlight'));
-                    this.bonus_active.push(this.reels[reel].sprite.children[i]);
-
-                    this.staticTweens.showTweens.push(this.tween({
-                        name: 'win-animation',
-                        set: [
-                            ['alpha', 0],
-                            ['visible', false]
-                        ]
-                    }, activeSprites));
-
-                    this.staticTweens.showTweens[this.staticTweens.showTweens.length - 1].stop();
-                    this.staticTweens.hideTweens.push(this.tween({
-                        name: 'win-animation',
-                        to: [
-                            ['scale', this.SYMBOLS_SCALE],
-                            ['alpha', 1, 100, 900]
-                        ],
-                        next: {
-                            set: [
-                                ['visible', true],
-                                ['alpha', 1]
-                            ]
-                        }
-                    }, activeSprites));
-
-                    this.staticTweens.hideTweens[this.staticTweens.hideTweens.length - 1].stop();
-
-                    this.staticTweens.showTweens.push(this.tween({
-                        name: 'win-animation',
-                        set: [
-                            ['alpha', 1],
-                            ['visible', true],
-                            ['scale', this.SYMBOLS_SCALE]
-                        ]
-                    }, highlightSprites));
-
-                    this.staticTweens.showTweens[this.staticTweens.showTweens.length - 1].stop();
-
-                    this.staticTweens.hideTweens.push(this.tween({
-                        name: 'win-animation',
-                        to: [
-                            ['scale', this.SYMBOLS_SCALE],
-                            ['alpha', 0, 100, 900]
-                        ],
-                        next: {
-                            set: [
-                                ['visible', false],
-                                ['alpha', 0]
-                            ]
-                        }
-                    }, highlightSprites));
-
-                    this.staticTweens.hideTweens[this.staticTweens.hideTweens.length - 1].stop();
-                    this.staticTweens.show();
-
-                    let temptimeout = setTimeout(() => {
-                        this.staticTweens.hide();
-                        this.staticTweens.showTweens = [];
-                        this.staticTweens.hideTweens = [];
-                    }, 900);
-                }*/
             }
         }
 
@@ -5140,11 +5069,11 @@ App.Gameplay = new Screen({
         this.stopHillAnimation();
         this.stopRabbitAnimation();
 
-        if (this.wildReelArray && this.isfreespin === false) {
+        if (this.wildReelArray && this.isWildSpin === false) {
             this.wildAnimation(this.wildReelArray);
         }
 
-        if (this.isfreespin === true && this.freespin_count === 0) {
+        if (this.isWildSpin === true && this.wildspinCount === 0) {
             this.hideWildanimation();
         }
 
@@ -5157,6 +5086,14 @@ App.Gameplay = new Screen({
             this.tween({
                 to: ['y', 600, 300]
             }, 'control panel container wrapper');
+            setTimeout(() => {
+                this.boxShowingAnimation();
+            }, 500);
+        }
+
+        if (this.isCoinwin === true) {
+            this.tempAutoMode = this.auto_mode;
+            this.tempCurrentAutoAmount = this.current_auto_amount;
             setTimeout(() => {
                 this.boxShowingAnimation();
             }, 500);
@@ -5261,12 +5198,7 @@ App.Gameplay = new Screen({
             this.currentSound = false;
         }
 
-        if(this.is_local_mode == false)
-            this.sendSignalToSite();
-    },
-
-    drawJackpot: function () {
-
+        this.sendSignalToSite();
     },
 
     updateTimerpanel: function () {
@@ -5851,6 +5783,10 @@ App.Gameplay = new Screen({
             this.animateEachLine(this.spinCombination.winData.winLines, () => {
                 if (this.state !== 'ready') return;
                 let tempTimeout = null;
+                if (this.isfreespin && this.freespinRetrigger === true) {
+                    this.retriggerDelay = 3000;
+                    this.boxRetriggerAnimation(this.boxCardsPos);
+                }
                 if (this.state === 'ready') tempTimeout = setTimeout(() => {
 
                     if (this.state !== 'ready' || this.winAnimationMode === false) {
@@ -5866,7 +5802,7 @@ App.Gameplay = new Screen({
                         if (this.state === 'ready') this.winAnimation();
                     }
 
-                }, 0);
+                }, this.retriggerDelay);
             });
         } else {
 
@@ -6285,10 +6221,6 @@ App.Gameplay = new Screen({
         this['control panel container wrapper'].visible = false;
         this['freespin control panel container wrapper'].visible = true;
         this['chest animation container'].visible = false;
-        // this['ControlPanelContainer'].visible = false;
-        // this['back_fire'].visible = false;
-        // this['background container wrapper'].visible = false;
-        // this['free_background container wrapper'].visible = true;
 
         setTimeout(() => {
             this.spin();
@@ -6448,6 +6380,12 @@ App.Gameplay = new Screen({
                 this['chest spine 1'].status = 'ready';
                 this['chest spine 3'].status = 'ready';
                 this['chest spine 5'].status = 'ready';
+            } else if(type === 1) {
+                this['chest spine 1'].status = 'ready';
+                this['chest spine 3'].status = 'ready';
+                this['chest spine 5'].status = 'ready';
+                this.showCoinwinContainer(this.coinwinAmount);
+                this['chest animation container'].visible = false;
             }
         }, 7000);
     },
@@ -6608,12 +6546,12 @@ App.Gameplay = new Screen({
 
         var response = [
             {"error":"0","response":{"initCards":[[4,7,9],[6,9,6],[2,9,8],[1,7,7],[0,8,8]],"arrRetVal":[{"retType":0,"win":2,"linePosIdx":11,"cardCount":3},{"retType":0,"win":2,"linePosIdx":19,"cardCount":3}],"betAmount":20,"winAmount":4,"balance":41698}},
-            {"error":"0","response":{"initCards":[[4,7,9],[6,9,6],[2,9,8],[1,7,7],[0,8,8]],"arrRetVal":[{"retType":3,"count":5,"scatterCardXPos":[0, 4],"scatterCardYPos":[1, 0]}],"betAmount":20,"winAmount":4,"balance":41698}},
+            {"error":"0","response":{"initCards":[[4,7,9],[6,9,6],[2,9,8],[1,7,7],[0,8,8]],"arrRetVal":[{"retType":0,"win":2,"linePosIdx":11,"cardCount":3}, {"retType":3,"count":5,"scatterCardXPos":[0, 4],"scatterCardYPos":[1, 0]}],"betAmount":20,"winAmount":4,"balance":41698}},
             {
-                "error":"0","response":{"valid":1,"initCards":[[11,1,7],[0,11,2],[1,3,11],[8,9,5],[5,8,3]],
+                "error":"0","response":{"valid":1,"initCards":[[8,11,3],[3,9,10],[3,11,8],[2,9,7],[4,11,7]],
                 "arrRetVal":[
                     {"retType":2,"scatterCardXPos":[0,1,2],
-                        "scatterCardYPos":[0,1,2],"win":5,
+                        "scatterCardYPos":[0,1,2],"win":5000,
                         "count": 10
                     }
                 ],
@@ -6665,7 +6603,6 @@ App.Gameplay = new Screen({
     },
 
     getServerCardsInfo: function (bet, isfreespin) {
-
         var options = {
             endpoint: 'play_game',
             params: [
@@ -6713,6 +6650,23 @@ App.Gameplay = new Screen({
         return this.apiRequest(options);
     },
 
+    getFreespinResult: function(amount) {
+        var options = {
+            endpoint: 'freespin_result',
+            params: [
+                { key: 'lines',          value: this.lines.step-1 },
+                { key: 'bet',            value: this.betperlines.step -1 },
+                { key: 'denom',          value: this.denomes.step -1 },
+                { key: 'gamespec',       value: this.gamespec },
+                { key: 'gamesession_id', value: this.gamesession_id },
+                { key: 'initbalance',    value: this.credits.value},
+                { key: 'play_for_fun',   value: 0  },
+                { key: 'bonus_amount',          value: amount },
+            ]
+        };
+        return this.apiRequest(options);
+    },
+
     sendSignalToSite: function () {
         var options = {
             endpoint: 'game_ping',
@@ -6724,15 +6678,7 @@ App.Gameplay = new Screen({
         return this.apiRequest(options);
     },
 
-    closeGame: function () {
-        var options = {
-            endpoint: 'zt_exit_game',
-            params: []
-        };
-        return this.apiRequest(options);
-    },
-
-    /*-------------------New generated methods by Jenson only for Fairytale-------------------*/
+    /*-------------------New generated methods by only for Fairytale-------------------*/
     setStatusControlBar: function (names, status) {
         let bar_names = ['start button bar', 'maxbet button bar', 'auto start button bar', 'coin bar up container', 'coin bar down container', 'level bar down container', 'level bar up container', 'refresh start button bar'];
         let button_names = ['start button', 'maxbet button', 'auto start button', 'coin bar up', 'coin bar down', 'level bar down', 'level bar up', 'refresh start button'];
@@ -6803,7 +6749,7 @@ App.Gameplay = new Screen({
     },
 
     wildAnimation: function (wildReelAry) {
-        // this.isfreespin = true;
+        this.isWildSpin = true;
         this.wildhighlightSprites = [];
         for (let i = 0; i < wildReelAry.length; i++) {
             let x_pos = Math.floor(wildReelAry[i] / 3);
@@ -6820,15 +6766,14 @@ App.Gameplay = new Screen({
     },
 
     hideWildanimation: function () {
-
         this.tween({
             name: 'win-animation',
             to: [
                 ['alpha', 0, 300],
                 ['visible', false]
             ]
-        }, this.wildhighlightSprites)
-        this.isfreespin = false;
+        }, this.wildhighlightSprites);
+        this.isWildSpin = false;
     },
 
     boxRetriggerAnimation: function(boxCardsPos) {
@@ -6855,6 +6800,7 @@ App.Gameplay = new Screen({
         });
         setTimeout(() => {
             this['chest count text'].text = ` +${this.regriggerCount} `;
+            this.playSound('pickAndClickChest', {}, {volume: this.sound_mode ? 0.5 : 0, loop: false});
             this.tween({
                 to: [
                     ['visible', true]
@@ -6862,7 +6808,6 @@ App.Gameplay = new Screen({
             }, this.reBoxGlowSprites);
             this.reBoxGlowSprites.forEach(item => {
                 let diff = this.getAbsolutPosDiff(item.name);
-                console.log(diff);
                 this.tween({
                     to: [
                         ['x', this[item.name].x + diff.x, 300],
@@ -7037,8 +6982,18 @@ App.Gameplay = new Screen({
 
     endFreespinAnimation: function() {
         this['Bonus freespin outro container'].visible = true;
+        this.playSound('outroFreeSpin', {}, {volume: this.sound_mode ? 0.5 : 0, loop: false});
         this['Bonus freespin total amount text'].text = this.total_freespin_amount;
         this['control panel container wrapper'].position.y = 404;
+        $.when(this.getFreespinResult(this.total_freespin_amount))
+            .done(response => {
+                this.credits = {
+                    value: response.response.balance,
+                    drawed: response.response.balance
+                };
+                this.refreshPanelValues();
+                this.sendSignalToSite();
+            });
     },
 
     refreshHelpPage: function (number) {
@@ -7097,6 +7052,15 @@ App.Gameplay = new Screen({
         }, 'BigwinContainer');
         setTimeout(() => {
             this.state = 'ready';
+            $.when(this.getFreespinResult(score))
+                .done(response => {
+                    this.credits = {
+                        value: response.response.balance,
+                        drawed: response.response.balance
+                    };
+                    this.refreshPanelValues();
+                    this.sendSignalToSite();
+                });
             this.hideBigwinContainer();
             if(this.auto_mode)
                 this.spin();
@@ -7112,14 +7076,13 @@ App.Gameplay = new Screen({
             ]
         }, 'BigwinContainer');
     },
-    /*-------------------New generated methods by Jenson only for Fairytale-------------------*/
+    /*-------------------New generated methods by only for Fairytale-------------------*/
 
     interval: 0,
     server_initMatrix: [],
     server_arrRetVal: [],
     server_scatters: [],
     base_amount: [100, 25, 7, 20, 10, 5, 10, 5, 3, 10, 5, 3, 500, 50, 10, 50, 25, 5, 8, 4, 2, 8, 4, 2, 8, 4, 2, 5, 2, 1],
-    server_url: "http://localhost/pixi/cui/server.json",
     server_win_amount: {
         value: 0,
         drawed: 0
@@ -7130,8 +7093,8 @@ App.Gameplay = new Screen({
     hill_interval: null,
     rabbit_interval: null,
 
-    api_url: "https://369.games/hosting/game/",
-    // api_url: "http://localhost:80/game/",
+    // api_url: "https://369.games/hosting/game/",
+    api_url: "http://localhost:80/game/",
 
     first_reel: false,
     second_reel: false,

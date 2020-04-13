@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41e23897-0c7a-4db3-a228-41e04e8eafe1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Screens/Gameplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/Screens/Gameplay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,18 +66,38 @@
       <workItem from="1586541797369" duration="5971000" />
       <workItem from="1586586632308" duration="599000" />
       <workItem from="1586673345362" duration="16650000" />
-      <workItem from="1586705083733" duration="20908000" />
+      <workItem from="1586705083733" duration="24058000" />
+      <workItem from="1586760806251" duration="1005000" />
     </task>
+    <task id="LOCAL-00001" summary="freespin animation added">
+      <created>1586731269188</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586731269189</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="freespin animation aded" />
+    <MESSAGE value="freespin animation added" />
+    <option name="LAST_COMMIT_MESSAGE" value="freespin animation added" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="585" y="119" key="CommitChangelistDialog2" timestamp="1586731253483">
+    <state x="646" y="329" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586732588419">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="585" y="119" key="CommitChangelistDialog2/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1586731253483" />
+    <state x="646" y="329" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1586732588419" />
+    <state x="585" y="119" key="CommitChangelistDialog2" timestamp="1586731263470">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="585" y="119" key="CommitChangelistDialog2/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1586731263470" />
     <state x="92" y="92" width="1734" height="866" key="DiffContextDialog" timestamp="1586488779719">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -86,10 +106,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="281" key="FileChooserDialogImpl/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1586477584733" />
-    <state x="1954" y="132" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586717189756">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1586731271396">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1586731271396" />
+    <state x="1954" y="132" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586762748264">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state x="1954" y="132" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1586717189756" />
+    <state x="1954" y="132" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1586762748264" />
     <state x="769" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586731231761">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -98,10 +122,10 @@
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="1913" y="0" width="974" height="1057" key="dock-window-1/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1586717128041" />
-    <state x="655" y="258" width="737" height="606" key="find.popup" timestamp="1586723922815">
+    <state x="655" y="258" width="737" height="606" key="find.popup" timestamp="1586762655310">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="655" y="258" width="737" height="606" key="find.popup/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1586723922815" />
+    <state x="655" y="258" width="737" height="606" key="find.popup/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1586762655310" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1586724006702">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
